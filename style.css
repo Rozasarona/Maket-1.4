@@ -47,15 +47,42 @@ header {
     
 }
 
-li.pages__kinds a {
+.pages__kinds .pages__link {
     text-decoration: none;
     color: #1B1C21;
     font-weight: 500;
+    
+}
+
+.pages__kinds .pages__link:hover {
+    
+    color: rgb(82, 82, 85);
+    background-image: url("img/highlight.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: -24px;
+    color: #7E7E82;
+}
+
+.pages .pages__kinds .service {
+    background-image: url("img/highlight.png");
+    background-position: left;
+    background-repeat: no-repeat;
+     padding-left: 24px;
+     margin-left: -24px;
+
+}
+
+.pages {
+    background-image: url("img/highlight.png");
+    background-position: left;
+    background-repeat: no-repeat;
+     padding-left: 0;
 }
 
 .pages__kinds {
     list-style: none;
-    padding: 16px 0;
+    padding: 16px 24px;
     
 }
 
@@ -86,8 +113,12 @@ main {
     flex-grow: 1;
 }
 
-a.active {
+.footer__languages .footer__link:hover {
+    display: inline-block;
+    transform: scale(1.2);
     color: #7E7E82;
+    cursor: pointer;
+
 }
 
 footer {
@@ -98,8 +129,21 @@ footer {
 .header__button_write,
 .header__button_about-us {
     margin-right: 16px;
+    
 }
 
+.button:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    cursor: pointer;    
+}
+
+.header__button_call:hover,
+.header__button_write:hover,
+.header__button_about-us:hover {
+    
+    
+}
 
 .footer__contacts {
     padding-bottom: 16px;
@@ -119,15 +163,15 @@ footer {
     font-weight: 800;
 }
 
-.footer__languages a {
+.footer__languages .footer__link {
     font-weight: 500;
 }
 
-.footer__link_ru,
-.footer__link_eng,
-.footer__link_ch {
+.footer__link {
     margin-right: 7px;
 }
+
+
 
 @media(min-height: 728px) {
     html, body, .container {
